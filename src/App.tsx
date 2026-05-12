@@ -1,21 +1,14 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import Home from './Home.tsx';
 import AboutMe from './AboutMe.tsx';
 import Navbar from './Navbar.tsx';
 import './App.css';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { KoFiWidget } from 'react-kofi';
 import MyIdeaProject from './MyIdeaProject.tsx';
 import Methodology from './Methodology.tsx';
 import Conclusion from './Conclusion.tsx';
 import DataAnalysisDelivery from './DataAnalysisDelivery.tsx';
 import Recommendations from './Recommendations.tsx';
-
-function About() {
-  return <h1>About Page</h1>;
-}
 
 function Contact() {
   return (
