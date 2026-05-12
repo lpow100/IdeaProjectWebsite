@@ -1,0 +1,33 @@
+.page-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-box {
+  background-color: #3a3a3a;
+  margin: 0.5em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center; /* Vertically centers both image and text block */
+  justify-content: flex-start; /* Aligns them to the left */
+  gap: 1.5em; /* Adds space between image and text */
+  padding: 1em;
+}
+
+.gallery-image {
+  width: 35em;
+  height: 20em;
+  object-fit: cover;
+  flex-shrink: 0; /* CRITICAL: Prevents the image from squishing */
+  object-position: top; /* Focuses on the bottom */
+}
+
+.text-content {
+  flex: 1; /* Tells the text to take up all remaining space */
+  min-width: 0; /* Allows text to wrap properly within flexbox */
+}
+
+.text-content p {
+  margin: 0;
+  line-height: 1.6; /* Standard paragraph spacing */
+}
